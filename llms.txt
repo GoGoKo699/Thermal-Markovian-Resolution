@@ -1,0 +1,18 @@
+# Thermal Markovian Resolution
+
+Scientific question: how does finite temperature constrain the agreement between an exactly calibrated dephasing semigroup and its controlled Gaussian bosonic realization?
+
+Read README.md for the principal result and science/model.md for the authoritative model, charged contacts, distance and theorem. The main law is d_N = Theta(min(1, N gamma beta)) at horizon tau = 1/gamma, for N preassigned interior contact times and every finite positive beta. The upper is uniform over arbitrary finite protected memory, recorded instruments and adaptive operations at those fixed times. One protected qubit gives the matching witness.
+
+Question routes:
+- Exact all-time calibration, positive spectral measures, KMS detailed balance, zero-frequency qualifications and the finite-window counterexample: science/calibration.md.
+- Exact Gaussian history influence, phase convention, complete-norm insertion argument, physical limit existence and operational upper bound: science/operational_bound.md.
+- Contact counting, no-cancellation phase protocol, final joint measurement and all-temperature lower constant: science/witness.md.
+- Explicit cutoff error, uniform free-channel approximation, semibounded Hamiltonians, thermal preparation and finite positive-frequency mode discretization: science/regularization.md.
+- Fluctuations versus response, operational meaning, contact threshold and physical limits: science/interpretation.md.
+- Prior mechanisms, imported estimates and comparison to current external and internal scientific sources: references/RELATED_WORK.md and references/references.bib.
+- Independent finite-oscillator and cutoff-integral checks, commands, parameters and evidence limits: verification/README.md and verification/check_witness.py.
+
+Keep these distinctions explicit: exact all-time calibration versus a finite-window or approximate fit; free-bath KMS product preparation versus global interacting equilibrium; adaptive operations versus adaptive timing; a mode-frequency cutoff versus bounded Hamiltonian spectrum or interaction norm; a finite number of untruncated oscillators versus a finite-dimensional bath; process discrimination per run versus repetition cost; scientific proof versus finite numerical checks.
+
+The all-time calibration theorem fixes the coupled Gaussian spectrum and hence the process within its stated class, not a unique microscopic bath realization. The physical cutoff consequence concerns the explicit approximating family, not every approximately calibrated thermal environment. The spectrum is retuned across temperatures. No continuous noncommuting drive, bounded-work guarantee, optimized finite-bath cost, or general non-Gaussian theorem is supplied.
