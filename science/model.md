@@ -37,10 +37,10 @@ J_\beta(\omega)=\frac{\gamma}{\pi}\tanh\!\left(\frac{\beta\omega}{2}\right),
 Thus the symmetrized spectrum is white. The unsymmetrized correlation, in the convention $`C(t)=\langle B(t)B(0)\rangle`$, retains a response:
 
 ```math
-\operatorname{Re}C(t)=\gamma\delta(t),
+\mathrm{Re}C(t)=\gamma\delta(t),
 \qquad
-\eta_\beta(t):=-\operatorname{Im}C(t)
-=\frac{\gamma}{\beta}\operatorname{csch}\!\left(\frac{\pi t}{\beta}\right)
+\eta_\beta(t):=-\mathrm{Im}C(t)
+=\frac{\gamma}{\beta}\mathrm{csch}\!\left(\frac{\pi t}{\beta}\right)
 \quad(t\gt0).
 ```
 

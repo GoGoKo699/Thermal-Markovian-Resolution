@@ -2,12 +2,13 @@
 
 A thermal response can be invisible in every free dephasing channel and still affect controlled experiments. For the exactly calibrated Gaussian thermal process, the effect of at most $`N`$ preassigned interventions obeys
 
+**Equation (O1).**
+
 ```math
 d_N(\beta,\gamma,\tau)
 \le
 \min\left\{1,\frac{e^{N\gamma\beta}-1}{2}\right\}
 \le\min\{1,N\gamma\beta\}.
-\tag{O1}
 ```
 
 The proof is uniform over the intervention times and over protected memories of arbitrary finite dimension. Instruments may be noncommuting, may retain classical outcomes, and may choose later operations using those records. The horizon $`\tau`$ is arbitrary in this upper bound; the matching contact-temperature law uses $`\gamma\tau=1`$.
@@ -43,9 +44,10 @@ g_\ell b_\ell e^{-i\omega_\ell t}
 
 Write $`C(t)=\langle B(t)B(0)\rangle_\beta=R(t)-i\eta(t)`$. The commutator is a scalar:
 
+**Equation (O2).**
+
 ```math
 [B(t),B(s)]=-2i\eta(t-s)I.
-\tag{O2}
 ```
 
 Let $`a(t)\in\{+1,-1\}`$ be a piecewise-constant probe history. Its conditional bath evolution is
@@ -57,10 +59,11 @@ U_a=\mathcal T\exp\left[-i\int_0^\tau a(t)B(t)dt\right]
 
 where $`D`$ is the multimode displacement and
 
+**Equation (O3).**
+
 ```math
 \varphi[a]=\int_{0\lt s\lt t\lt\tau}
 a(t)a(s)\eta(t-s)\,ds\,dt.
-\tag{O3}
 ```
 
 This is exact: the Magnus expansion terminates after its scalar commutator term. The displacement amplitude in mode $`\ell`$ is
@@ -77,17 +80,20 @@ For two histories $`a,b`$, define
 \Sigma(t)=a(t)+b(t).
 ```
 
-The bath influence is $`F(a,b)=\operatorname{Tr}_B(U_a\rho_\beta U_b^\dagger)`$. Weyl composition gives
+The bath influence is $`F(a,b)=\mathrm{Tr}_B(U_a\rho_\beta U_b^\dagger)`$. Weyl composition gives
+
+**Equation (O4).**
 
 ```math
 \varphi[a]-\varphi[b]
-+\operatorname{Im}\langle\xi[b],\xi[a]\rangle
++\mathrm{Im}\langle\xi[b],\xi[a]\rangle
 =\int_{0\lt s\lt t\lt\tau}
 \delta(t)\Sigma(s)\eta(t-s)\,ds\,dt.
-\tag{O4}
 ```
 
 Gaussian averaging of the remaining displacement then yields
+
+**Equation (O5).**
 
 ```math
 \begin{aligned}
@@ -96,16 +102,16 @@ F(a,b)=\exp\Bigg[&-\frac12\int_0^\tau\!\int_0^\tau
 &+i\int_{0\lt s\lt t\lt\tau}
 \delta(t)\Sigma(s)\eta(t-s)\,ds\,dt\Bigg].
 \end{aligned}
-\tag{O5}
 ```
 
 Changing the convention for the off-diagonal element reverses the response phase but leaves the bounds unchanged. Equation (O5) uses neither weak coupling nor a Markov approximation.
 
 On one interval, both histories are constant and
 
+**Equation (O6).**
+
 ```math
 \delta_j\Sigma_j=(a_j-b_j)(a_j+b_j)=a_j^2-b_j^2=0.
-\tag{O6}
 ```
 
 Thus the response contributes only between distinct intervals. This cancellation will make the singular short-time kernel manageable.
@@ -114,41 +120,46 @@ Thus the response contributes only between distinct intervals. This cancellation
 
 The [all-time calibration theorem](calibration.md#uniqueness-under-all-time-calibration) fixes
 
+**Equation (O7).**
+
 ```math
 J_\beta(d\omega)
 =\frac\gamma\pi\tanh\!\left(\frac{\beta\omega}{2}\right)d\omega,
 \qquad
 \mu(d\omega)=\frac\gamma\pi d\omega.
-\tag{O7}
 ```
 
 In the cutoff limit, the real covariance is $`R(t)=\gamma\delta_0(t)`$. The real part of (O5) is therefore exactly the independent Markov dephasing factor
 
+**Equation (O8).**
+
 ```math
 F_0(a,b)=\prod_{j=1}^L
 \exp\left[-\frac\gamma2|I_j|(a_j-b_j)^2\right].
-\tag{O8}
 ```
 
 For $`t\gt0`$, the regulated sine transform of (O7) is
 
+**Equation (O9).**
+
 ```math
 \eta_\beta(t)=\frac\gamma\beta
-\operatorname{csch}\!\left(\frac{\pi t}{\beta}\right).
-\tag{O9}
+\mathrm{csch}\!\left(\frac{\pi t}{\beta}\right).
 ```
 
-One way to obtain (O9) is to differentiate $`\tanh(\beta\omega/2)`$ in frequency, use the Fourier transform of $`\operatorname{sech}^2`$, and integrate back in the distributional sense. Equivalently, an Abel regulator gives
+One way to obtain (O9) is to differentiate $`\tanh(\beta\omega/2)`$ in frequency, use the Fourier transform of $`\mathrm{sech}^2`$, and integrate back in the distributional sense. Equivalently, an Abel regulator gives
 
 ```math
 \lim_{\varepsilon\downarrow0}
 \int_0^\infty e^{-\varepsilon\omega}
 \tanh\!\left(\frac{\beta\omega}{2}\right)
 \sin(\omega t)d\omega
-=\frac\pi\beta\operatorname{csch}\!\left(\frac{\pi t}{\beta}\right).
+=\frac\pi\beta\mathrm{csch}\!\left(\frac{\pi t}{\beta}\right).
 ```
 
 The kernel is positive on positive times. It behaves as $`\gamma/(\pi t)`$ near zero, so its zero moment diverges. Its first moment is finite:
+
+**Equation (O10).**
 
 ```math
 \begin{aligned}
@@ -157,25 +168,26 @@ The kernel is positive on positive times. It behaves as $`\gamma/(\pi t)`$ near 
 \int_0^\infty\frac{u}{\sinh u}du\\
 &=\frac{\gamma\beta}{4}.
 \end{aligned}
-\tag{O10}
 ```
 
 For the last identity, expand $`1/\sinh u=2\sum_{r\ge0}e^{-(2r+1)u}`$, integrate term by term, and use the sum of the inverse odd squares.
 
 For $`j\gt k`$, let
 
+**Equation (O11).**
+
 ```math
 \eta_{jk}=\int_{I_j}dt\int_{I_k}ds\,\eta_\beta(t-s).
-\tag{O11}
 ```
 
 These integrals are finite, including adjacent intervals. Near their shared boundary the rectangle supplies an overlap factor bounded by the separation $`t-s`$, which cancels the kernel's $`1/(t-s)`$ singularity. Equations (O5), (O6) and (O8) give
+
+**Equation (O12).**
 
 ```math
 F_\beta(a,b)
 =F_0(a,b)
 \exp\left[i\sum_{j\gt k}\eta_{jk}(a_j-b_j)(a_k+b_k)\right].
-\tag{O12}
 ```
 
 An entrywise bound on this phase is insufficient by itself for an operational distance bound. The next step identifies every term with a norm-controlled circuit.
@@ -184,6 +196,8 @@ An entrywise bound on this phase is insufficient by itself for an operational di
 
 Let $`P_+`$ and $`P_-`$ be the probe's $`Z`$ eigenprojectors, extended by the identity on the protected memory and records. For $`a,b\in\{+1,-1\}^L`$, define a linear history map recursively by
 
+**Equation (O13).**
+
 ```math
 \begin{aligned}
 X_1&=P_{a_1}XP_{b_1},\\
@@ -191,14 +205,14 @@ X_j&=P_{a_j}\mathcal A_{j-1}(X_{j-1})P_{b_j},
 \qquad j=2,\ldots,L,\\
 \mathcal H_{a,b}(X)&=X_L.
 \end{aligned}
-\tag{O13}
 ```
 
 For an influence kernel $`F`$, the tester output map is
 
+**Equation (O14).**
+
 ```math
 \mathcal T_F(X)=\sum_{a,b}F(a,b)\mathcal H_{a,b}(X).
-\tag{O14}
 ```
 
 Each $`\mathcal H_{a,b}`$ has diamond norm at most one, since it is a composition of CPTP maps and left/right multiplications by orthogonal projectors. The stronger bound needed below applies after summing the histories with their physical influence.
@@ -213,17 +227,19 @@ m_{p,q}(a,b)=\prod_{j=1}^L a_j^{p_j}b_j^{q_j}.
 
 Then, for every fixed tester,
 
+**Equation (O15).**
+
 ```math
 \|\mathcal T_{F m_{p,q}}\|_\diamond\le1.
-\tag{O15}
 ```
 
 **Proof for a physical dilation.** Keep the bath in the circuit. At the end of interval $`j`$, before the next tester map, insert
 
+**Equation (O16).**
+
 ```math
 X\longmapsto
 (Z^{p_j}\otimes I)X(Z^{q_j}\otimes I).
-\tag{O16}
 ```
 
 In the history expansion this multiplies the coefficient by exactly $`a_j^{p_j}b_j^{q_j}`$. The insertion commutes with the longitudinal evolution within that interval. No insertion is moved across a tester operation, so arbitrary noncommuting instruments present no obstruction.
@@ -238,16 +254,19 @@ The extension to a limiting influence follows from the finite-history norm conve
 
 Suppose two kernels satisfy
 
+**Equation (O17).**
+
 ```math
 F'(a,b)=F(a,b)e^{G(a,b)},
 \qquad
 G(a,b)=\sum_\mu c_\mu m_\mu(a,b),
 \qquad
 S=\sum_\mu|c_\mu|,
-\tag{O17}
 ```
 
 where the $`m_\mu`$ are history monomials and the base kernel $`F`$ satisfies (O15). A product of such monomials is another monomial. Expand the scalar exponential, apply (O15) to every term, and sum the absolute coefficients:
+
+**Equation (O18).**
 
 ```math
 \begin{aligned}
@@ -255,7 +274,6 @@ where the $`m_\mu`$ are history monomials and the base kernel $`F`$ satisfies (O
 &\le\sum_{r=1}^\infty\frac{S^r}{r!}\\
 &=e^S-1.
 \end{aligned}
-\tag{O18}
 ```
 
 The series is absolutely convergent in diamond norm. Equation (O18) has no factor for the number of histories, memory dimension or outcome branches. If both output maps describe physical processes, their output states are normalized, and any final-event discrepancy is bounded by half the right-hand side.
@@ -274,11 +292,12 @@ f_j(\omega)=\int_{I_j}e^{i\omega t}dt.
 
 The integrated real coefficients are
 
+**Equation (O19).**
+
 ```math
 R^\Omega_{jk}
 =\frac\gamma\pi\int_0^\Omega
-\operatorname{Re}\!\left[f_j(\omega)\overline{f_k(\omega)}\right]d\omega,
-\tag{O19}
+\mathrm{Re}\!\left[f_j(\omega)\overline{f_k(\omega)}\right]d\omega,
 ```
 
 and the cross-interval response coefficients use the imaginary part with weight $`J_\beta`$. At low frequency these integrands are bounded. At high frequency,
@@ -289,22 +308,24 @@ and the cross-interval response coefficients use the imaginary part with weight 
 
 so every coefficient has an absolutely convergent tail. Their limits are
 
+**Equation (O20).**
+
 ```math
 R_{jk}=\gamma|I_j|\,\delta_{jk},
 \qquad
 \eta_{jk}=\int_{I_j}dt\int_{I_k}ds\,\eta_\beta(t-s)
 \quad(j\gt k).
-\tag{O20}
 ```
 
 For finite cutoff, finite-mode spectral discretizations approximate these finitely many coefficients with positive weights and normalized oscillator Gibbs states. The low-frequency integrals are regular after the coupling and thermal factors are combined. One may therefore take finite-mode approximations first, and then increase the frequency cutoff. No infinite-volume thermal density matrix is required for this construction.
 
 Every history influence converges to (O12). For any fixed $`L`$, equations (O13)–(O14) imply
 
+**Equation (O21).**
+
 ```math
 \|\mathcal T_{F_\Omega m}-\mathcal T_{F_\beta m}\|_\diamond
 \le\sum_{a,b}|F_\Omega(a,b)-F_\beta(a,b)|,
-\tag{O21}
 ```
 
 for every history monomial $`m`$. This convergence is uniform over protected-memory dimensions and testers at the fixed schedule. The right-hand side contains finitely many terms. It may be bounded crudely by $`4^L`$ times the largest coefficient error, but it is used only to establish the limit and to pass the norm bound (O15) to that limit. It does not enter the operational rate (O18).
@@ -324,12 +345,15 @@ Apply (O18) to (O12), using the Markov influence $`F_0`$ as the base. Each facto
 
 has four monomials. Since $`\eta_{jk}\ge0`$, its total coefficient budget is bounded by
 
+**Equation (O22).**
+
 ```math
 S\le4\sum_{j\gt k}\eta_{jk}.
-\tag{O22}
 ```
 
 For any pair $`s\lt t`$ lying in distinct intervals, at least one contact lies between them. Charge the pair to every such contact, which can only increase the integral because the kernel is positive. For a contact at $`c`$,
+
+**Equation (O23).**
 
 ```math
 \begin{aligned}
@@ -338,15 +362,15 @@ For any pair $`s\lt t`$ lying in distinct intervals, at least one contact lies b
 &\le\int_0^\infty u\eta_\beta(u)du\\
 &=\frac{\gamma\beta}{4}.
 \end{aligned}
-\tag{O23}
 ```
 
 There are at most $`N`$ contacts. Consequently,
 
+**Equation (O24).**
+
 ```math
 \sum_{j\gt k}\eta_{jk}\le\frac{N\gamma\beta}{4},
 \qquad S\le N\gamma\beta.
-\tag{O24}
 ```
 
 Combining (O18) with the final-event trace-distance bound proves the first inequality in (O1). To obtain its second inequality, set $`x=N\gamma\beta`$. For $`0\le x\le1`$, convexity gives

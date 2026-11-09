@@ -31,6 +31,8 @@ n_\beta(\omega)=\frac{1}{e^{\beta\omega}-1},
 
 the covariance convention is
 
+**Equation (C1).**
+
 ```math
 \begin{aligned}
 C(t)
@@ -40,10 +42,11 @@ C(t)
 +n_\beta(\omega)e^{i\omega t}\right]J(d\omega)\\
 &=R(t)-i\eta(t).
 \end{aligned}
-\tag{C1}
 ```
 
 Thus the positive symmetrized measure is
+
+**Equation (C2).**
 
 ```math
 \mu(d\omega)=\coth\!\left(\frac{\beta\omega}{2}\right)J(d\omega),
@@ -51,18 +54,18 @@ Thus the positive symmetrized measure is
 R(t)=\int_{(0,\infty)}\cos(\omega t)\mu(d\omega),
 \qquad
 \eta(t)=\int_{(0,\infty)}\sin(\omega t)J(d\omega).
-\tag{C2}
 ```
 
 These formulas may be interpreted as distributions or through frequency cutoffs. The finite-mode thermal covariance, including its occupation factors, is also given in [Huang–Zhu–Park–Lin, equations (3.21), (3.22) and (3.27)](https://arxiv.org/html/2411.08741v2).
 
 Fix any reference frequency $`\omega_*\gt0`$. We impose the following two finiteness conditions:
 
+**Equation (C3).**
+
 ```math
 \mu((0,\omega_*])\lt\infty,
 \qquad
 \int_{(\omega_*,\infty)}\omega^{-2}\mu(d\omega)\lt\infty.
-\tag{C3}
 ```
 
 Their validity does not depend on the choice of $`\omega_*`$. They say that a finite interval of constant coupling has finite integrated noise variance. Indeed, its frequency filter
@@ -85,6 +88,8 @@ For a factorized initial state, the off-diagonal probe element has the form
 
 after removing any known deterministic probe rotation. Exact Gaussian averaging gives
 
+**Equation (C4).**
+
 ```math
 \begin{aligned}
 \Gamma(t)
@@ -92,7 +97,6 @@ after removing any known deterministic probe rotation. Exact Gaussian averaging 
 &=2qt^2+4\int_{(0,\infty)}
 \frac{1-\cos(\omega t)}{\omega^2}\mu(d\omega).
 \end{aligned}
-\tag{C4}
 ```
 
 The factor of four in the second line comes from the difference between the two eigenvalues of $`Z`$. The [influence-functional derivation](operational_bound.md#conditional-bath-histories) establishes this formula without a weak-coupling approximation. In free evolution the response phase vanishes: both conditional forces have the same square, $`(+1)^2=(-1)^2`$. The common scalar bath phase therefore cancels.
@@ -106,14 +110,17 @@ The target generator
 
 has coherence factor $`e^{-2\gamma t}`$. Exact all-time calibration means equality of the free channels for every $`t\ge0`$, and hence
 
+**Equation (C5).**
+
 ```math
 \Gamma(t)=2\gamma t\quad(t\ge0).
-\tag{C5}
 ```
 
 ## Uniqueness under all-time calibration
 
 **Proposition.** Let $`\mu`$ be a positive Borel measure on $`(0,\infty)`$ satisfying (C3), and let $`q\ge0`$ be finite. If (C4) satisfies (C5), then
+
+**Equation (C6).**
 
 ```math
 q=0,
@@ -122,7 +129,6 @@ q=0,
 \qquad
 J(d\omega)=\frac{\gamma}{\pi}
 \tanh\!\left(\frac{\beta\omega}{2}\right)d\omega.
-\tag{C6}
 ```
 
 These are equalities of measures. In particular, all atomic and singular-continuous components of the coupled positive-frequency spectrum vanish. If a spectral density was assumed initially, its value is fixed almost everywhere.
@@ -131,21 +137,23 @@ These are equalities of measures. In particular, all atomic and singular-continu
 
 The inequality $`1-\cos x\le\min\{2,x^2/2\}`$ and (C3) imply that $`\Gamma`$ is finite, continuous and at most quadratic in time. Extend it evenly to the real line. The even spectral measure
 
+**Equation (C7).**
+
 ```math
 M=q\delta_0+\frac12\mu+\frac12\mu^{\mathrm{ref}}
-\tag{C7}
 ```
 
 is tempered, where $`\mu`$ is embedded on the positive half-line and $`\mu^{\mathrm{ref}}`$ is its reflection onto the negative half-line.
 
 Differentiating (C4) twice in the sense of tempered distributions gives
 
+**Equation (C8).**
+
 ```math
 \Gamma''(t)=4R(t),
 \qquad
 R(t)=q+\int_{(0,\infty)}\cos(\omega t)\mu(d\omega)
 =\int_{\mathbb R}e^{i\omega t}M(d\omega).
-\tag{C8}
 ```
 
 The interchange can be checked against a Schwartz test function. Before integrating by parts, the high-frequency contribution is bounded by a constant times $`\omega^{-2}`$. At low frequency, $`(1-\cos(\omega t))/\omega^2`$ is bounded by $`t^2/2`$. Both are integrable under (C3). After integration by parts, the test function's Fourier transform decays rapidly, which justifies the last integral in (C8).
@@ -177,22 +185,24 @@ An equivalent proof uses the uniqueness of the symmetric Lévy–Khintchine repr
 
 Free coherence determines the symmetrized spectrum. Thermal detailed balance then determines the response. To see this directly, let $`S_+`$ and $`S_-`$ denote the positive- and reflected negative-frequency measures in (C1). KMS gives
 
+**Equation (C9).**
+
 ```math
 S_-(d\omega)=e^{-\beta\omega}S_+(d\omega),
 \qquad
 \mu=S_++S_-,
 \qquad
 J=S_+-S_-.
-\tag{C9}
 ```
 
 Solving these measure identities yields $`J=\tanh(\beta\omega/2)\mu`$. For the uniquely calibrated spectrum, the response is
 
+**Equation (C10).**
+
 ```math
 \eta_\beta(t)=\frac{\gamma}{\beta}
-\operatorname{csch}\!\left(\frac{\pi t}{\beta}\right),
+\mathrm{csch}\!\left(\frac{\pi t}{\beta}\right),
 \qquad t\gt0,
-\tag{C10}
 ```
 
 with the transform understood through ultraviolet regularization. Its derivation and first moment appear in the [operational-bound proof](operational_bound.md#the-calibrated-response-kernel).
@@ -222,9 +232,10 @@ The all-time hypothesis is essential under (C3). The following construction give
 
 Fix a window length $`T_0\gt0`$. Choose a nonzero, real, even, smooth compactly supported function $`K`$ with support outside $`[-T_0,T_0]`$. Define its inverse cosine transform by
 
+**Equation (C11).**
+
 ```math
 h(\omega)=\frac2\pi\int_0^\infty K(t)\cos(\omega t)dt.
-\tag{C11}
 ```
 
 Then $`h`$ is a bounded real Schwartz function and
@@ -241,13 +252,16 @@ Choose a nonzero real $`\lambda`$ satisfying
 
 The measure
 
+**Equation (C12).**
+
 ```math
 \mu_\lambda(d\omega)
 =\left[\frac\gamma\pi+\lambda h(\omega)\right]d\omega
-\tag{C12}
 ```
 
 is strictly positive and satisfies (C3). Its dephasing exponent differs from the white-spectrum exponent by a smooth even function obeying
+
+**Equation (C13).**
 
 ```math
 \begin{aligned}
@@ -255,7 +269,6 @@ is strictly positive and satisfies (C3). Its dephasing exponent differs from the
 (\Gamma_\lambda-\Gamma_0)(0)&=0,\\
 (\Gamma_\lambda-\Gamma_0)'(0)&=0.
 \end{aligned}
-\tag{C13}
 ```
 
 Because $`K`$ vanishes on the calibration window, (C13) implies
