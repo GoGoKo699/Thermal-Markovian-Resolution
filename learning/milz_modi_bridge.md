@@ -1,6 +1,6 @@
 # From quantum processes to thermal control resolution
 
-A qubit loses its coherence as a simple exponential. Measuring that decay for every waiting time determines its uncontrolled channel. A different experiment interrupts the evolution, stores information in a protected reference, and measures the two systems together. The question of this project is how accurately the same Markov description predicts those controlled experiments when only a limited number of contacts is available.
+In the specified pure-dephasing model, a qubit keeps its populations while its coherence decays as a real exponential. Knowing this full coherence multiplier for every waiting time determines its uncontrolled channel. A different experiment interrupts the evolution, stores information in a protected reference, and measures the two systems together. The question of this project is how accurately the same Markov description predicts those controlled experiments when only a limited number of contacts is available.
 
 The distinction has a concrete instance below. Two models agree on every uncontrolled channel. With one contact halfway through the observation time, a specified binary measurement has probabilities about $`0.5354`$ and $`0.4646`$ in the two models. The complete contact law then asks both how such a discrepancy can be accumulated and how large any allowed experiment can make it.
 
