@@ -34,6 +34,12 @@ Start with the [model and exact claims](science/model.md). The proof route follo
 
 The [LLM reading guide](llms.txt) maps questions to these scientific sources.
 
+## Learning route
+
+The selected educational source is **Milz and Modi, *Quantum Stochastic Processes and Quantum non-Markovian Phenomena* (2021), arXiv version 2**. The [source bridge](learning/milz_modi_bridge.md) translates its operational framework into this thermal model and works through one complete contact experiment, including the final binary measurement.
+
+The [30-milestone map](learning/milestones.md) develops 14 background milestones and 16 milestones through the result. It connects the quantum-process foundations to the microscopic thermal calculation, then joins the universal upper bound, attaining witness and physical approximation. The map ends each phase with a synthesis of the full argument.
+
 ## Physical approximation
 
 Exact free-semigroup behavior requires an ultraviolet process limit. For its explicit positive-frequency cutoff family, the free-channel error tends to zero uniformly in time as the mode-frequency cutoff grows. An explicit process bound also controls every fixed contact budget. Consequently the finite-cutoff family retains a nonzero controlled discrepancy while its free-channel calibration becomes arbitrarily accurate.

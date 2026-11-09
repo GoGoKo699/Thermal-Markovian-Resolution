@@ -4,6 +4,11 @@ Scientific question: how does finite temperature constrain the agreement between
 
 Read README.md for the principal result and science/model.md for the authoritative model, charged contacts, distance and theorem. The main law is d_N = Theta(min(1, N gamma beta)) at horizon tau = 1/gamma, for N preassigned interior contact times and every finite positive beta. The upper is uniform over arbitrary finite protected memory, recorded instruments and adaptive operations at those fixed times. One protected qubit gives the matching witness.
 
+Study routes:
+- The project-intrinsic 30-milestone map is learning/milestones.md: M01–M14 are background/preliminaries; M15–M30 build the scientific narrative, with synthesis at M14 and M30.
+- The single selected educational anchor is Milz–Modi (2021), arXiv:2012.01894v2. learning/milz_modi_bridge.md verifies the reading locations, translates notation and assumptions, and gives a complete one-contact experiment with the final joint binary measurement.
+- Milz–Modi supplies the operational foundations. The KMS spectral calculation, contact law and cutoff bounds are supplied in this project's science files; do not attribute those theorems to the educational anchor.
+
 Question routes:
 - Exact all-time calibration, positive spectral measures, KMS detailed balance, zero-frequency qualifications and the finite-window counterexample: science/calibration.md.
 - Exact Gaussian history influence, phase convention, complete-norm insertion argument, physical limit existence and operational upper bound: science/operational_bound.md.

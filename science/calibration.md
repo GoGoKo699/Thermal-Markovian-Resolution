@@ -190,7 +190,7 @@ Solving these measure identities yields $`J=\tanh(\beta\omega/2)\mu`$. For the u
 
 ```math
 \eta_\beta(t)=\frac{\gamma}{\beta}
-\operatorname{csch}\!\left(\frac{\pi t}{\beta}\right),
+\mathrm{csch}\!\left(\frac{\pi t}{\beta}\right),
 \qquad t\gt0,
 \tag{C10}
 ```

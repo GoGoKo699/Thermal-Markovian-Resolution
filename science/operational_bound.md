@@ -77,11 +77,11 @@ For two histories $`a,b`$, define
 \Sigma(t)=a(t)+b(t).
 ```
 
-The bath influence is $`F(a,b)=\operatorname{Tr}_B(U_a\rho_\beta U_b^\dagger)`$. Weyl composition gives
+The bath influence is $`F(a,b)=\mathrm{Tr}_B(U_a\rho_\beta U_b^\dagger)`$. Weyl composition gives
 
 ```math
 \varphi[a]-\varphi[b]
-+\operatorname{Im}\langle\xi[b],\xi[a]\rangle
++\mathrm{Im}\langle\xi[b],\xi[a]\rangle
 =\int_{0\lt s\lt t\lt\tau}
 \delta(t)\Sigma(s)\eta(t-s)\,ds\,dt.
 \tag{O4}
@@ -134,18 +134,18 @@ For $`t\gt0`$, the regulated sine transform of (O7) is
 
 ```math
 \eta_\beta(t)=\frac\gamma\beta
-\operatorname{csch}\!\left(\frac{\pi t}{\beta}\right).
+\mathrm{csch}\!\left(\frac{\pi t}{\beta}\right).
 \tag{O9}
 ```
 
-One way to obtain (O9) is to differentiate $`\tanh(\beta\omega/2)`$ in frequency, use the Fourier transform of $`\operatorname{sech}^2`$, and integrate back in the distributional sense. Equivalently, an Abel regulator gives
+One way to obtain (O9) is to differentiate $`\tanh(\beta\omega/2)`$ in frequency, use the Fourier transform of $`\mathrm{sech}^2`$, and integrate back in the distributional sense. Equivalently, an Abel regulator gives
 
 ```math
 \lim_{\varepsilon\downarrow0}
 \int_0^\infty e^{-\varepsilon\omega}
 \tanh\!\left(\frac{\beta\omega}{2}\right)
 \sin(\omega t)d\omega
-=\frac\pi\beta\operatorname{csch}\!\left(\frac{\pi t}{\beta}\right).
+=\frac\pi\beta\mathrm{csch}\!\left(\frac{\pi t}{\beta}\right).
 ```
 
 The kernel is positive on positive times. It behaves as $`\gamma/(\pi t)`$ near zero, so its zero moment diverges. Its first moment is finite:
@@ -277,7 +277,7 @@ The integrated real coefficients are
 ```math
 R^\Omega_{jk}
 =\frac\gamma\pi\int_0^\Omega
-\operatorname{Re}\!\left[f_j(\omega)\overline{f_k(\omega)}\right]d\omega,
+\mathrm{Re}\!\left[f_j(\omega)\overline{f_k(\omega)}\right]d\omega,
 \tag{O19}
 ```
 

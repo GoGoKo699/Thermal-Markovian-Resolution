@@ -29,7 +29,7 @@ U_0=e^{-ihH_+}e^{-ihH_+},
 U_1=e^{-ihH_-}e^{-ihH_+}.
 ```
 
-The trace $`\operatorname{Tr}(U_0\rho_\beta U_1^\dagger)`$ is compared with the exact oscillator influence factor
+The trace $`\mathrm{Tr}(U_0\rho_\beta U_1^\dagger)`$ is compared with the exact oscillator influence factor
 
 ```math
 \exp\left[
@@ -63,7 +63,7 @@ with the independently nested time-domain calculation
 
 The absolute difference must be below $`2\times10^{-8}`$. Each quadrature uses absolute and relative tolerance $`10^{-11}`$. The nested integration's reported error estimate is not a certified enclosure of the whole calculation; the explicit cross-representation tolerance is the acceptance check.
 
-The script also reports the phase, modulus, and final-event discrepancy at $`\Omega=16,64,256`$, together with the limiting $`\operatorname{csch}`$-kernel answer. It uses the full complex coherence at finite cutoff: its modulus is not exactly $`e^{-1}`$. Hard-cutoff errors need not decrease monotonically, so monotonic convergence is not a test condition. The free-channel exponent deficit at the horizon is checked against the analytical bound $`8\gamma/(\pi\Omega)`$.
+The script also reports the phase, modulus, and final-event discrepancy at $`\Omega=16,64,256`$, together with the limiting $`\mathrm{csch}`$-kernel answer. It uses the full complex coherence at finite cutoff: its modulus is not exactly $`e^{-1}`$. Hard-cutoff errors need not decrease monotonically, so monotonic convergence is not a test condition. The free-channel exponent deficit at the horizon is checked against the analytical bound $`8\gamma/(\pi\Omega)`$.
 
 The limiting phase is approximately $`0.3873488773`$ and the limiting witness discrepancy is $`0.0708042574`$. The reference calculation gives the following rounded values. All distances are half trace distances of the two-dimensional witness outputs.
 

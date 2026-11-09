@@ -64,7 +64,7 @@ where
 
 ```math
 \eta_\beta(u)=\frac{\gamma}{\beta}
-\operatorname{csch}\left(\frac{\pi u}{\beta}\right),
+\mathrm{csch}\left(\frac{\pi u}{\beta}\right),
 \qquad u\gt0.
 ```
 

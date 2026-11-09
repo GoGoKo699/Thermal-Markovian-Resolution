@@ -182,13 +182,13 @@ f_j(\omega)=\int_{I_j}e^{i\omega t}\,dt,
 \tag{15}
 ```
 
-Write $`R_{\beta,\Omega}=\operatorname{Re}C_{\beta,\Omega}`$ and $`\eta_{\beta,\Omega}=-\operatorname{Im}C_{\beta,\Omega}`$. The coefficients entering the exact Gaussian history influence are
+Write $`R_{\beta,\Omega}=\mathrm{Re}C_{\beta,\Omega}`$ and $`\eta_{\beta,\Omega}=-\mathrm{Im}C_{\beta,\Omega}`$. The coefficients entering the exact Gaussian history influence are
 
 ```math
 R_{jk}^{\Omega}
 =\int_{I_j}dt\int_{I_k}ds\,R_{\beta,\Omega}(t-s)
 =\frac{\gamma}{\pi}\int_0^\Omega
-\operatorname{Re}[f_j(\omega)\overline{f_k(\omega)}]\,d\omega,
+\mathrm{Re}[f_j(\omega)\overline{f_k(\omega)}]\,d\omega,
 \tag{16}
 ```
 
@@ -198,7 +198,7 @@ and, for $`j\gt k`$,
 \eta_{jk}^{\Omega}
 =\int_{I_j}dt\int_{I_k}ds\,\eta_{\beta,\Omega}(t-s)
 =\int_0^\Omega J_\beta(\omega)
-\operatorname{Im}[f_j(\omega)\overline{f_k(\omega)}]\,d\omega.
+\mathrm{Im}[f_j(\omega)\overline{f_k(\omega)}]\,d\omega.
 \tag{17}
 ```
 
@@ -210,7 +210,7 @@ R_{jk}^{\infty}=\gamma h_j\delta_{jk},
 \eta_{jk}^{\infty}
 =\int_{I_j}dt\int_{I_k}ds\,
 \frac{\gamma}{\beta}
-\operatorname{csch}\!\left(\frac{\pi(t-s)}{\beta}\right).
+\mathrm{csch}\!\left(\frac{\pi(t-s)}{\beta}\right).
 \tag{18}
 ```
 
@@ -418,8 +418,8 @@ The integrands are jointly continuous on the compact frequency/time domain, incl
 ```math
 \epsilon_m=
 \max\!\left\{
-\sup_{|u|\le\tau}|\operatorname{Re}(C_m-C_{\beta,\Omega})(u)|,\quad
-\sup_{|u|\le\tau}|\operatorname{Im}(C_m-C_{\beta,\Omega})(u)|
+\sup_{|u|\le\tau}|\mathrm{Re}(C_m-C_{\beta,\Omega})(u)|,\quad
+\sup_{|u|\le\tau}|\mathrm{Im}(C_m-C_{\beta,\Omega})(u)|
 \right\}
 \longrightarrow0.
 \tag{34}
